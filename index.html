@@ -9,51 +9,47 @@
 
 
   <header>
-    <nav>
+    <nav class="page-nav">
       <div>
-        <a class="logo" href="index.html">
+        <a class="logo" href="#">
           <img src="img/svg/logo-technomart.svg" alt="logo-technomart">
         </a>
       </div>
-      <div>
+      <div class="header-search">
         <input type="search"> Поиск
       </div>
-      <div>
-        <a href="#bootmarks">Закладки</a>
-      </div>
-      <div>
-        <a href="#cart">Корзина</a>
-      </div>
-      <div>
-        <a href="#order">Оформить заказ</a>
+      <div class="header-container">
+        <a class="bootmarks" href="#">Закладки</a>
+        <a class="cart" href="#">Корзина</a>
+        <a class="order" href="#">Оформить заказ</a>
       </div>
     </nav>
 
-    <div>
+    <div class="header-info">
       <p>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
     </div>
 
-    <div>
-      <p> <a href="tel:+78125550555">+7 (812) 555-05-55</a> </p>
-      <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 10/8</p>
+    <div class="header-contacts">
+      <p class="header-number"> <a href="tel:+78125550555">+7 (812) 555-05-55</a> </p>
+      <p class="header-location">г. Санкт-Петербург, ул. Б.Конюшенная, д. 10/8</p>
     </div>
 
     <div>
-      <ul>
+      <ul class="navigation_user">
         <li>
-          <button type="button">
+          <button class="login_user" type="button">
             Войти
           </button>
         </li>
         <li>
-          <button type="button">
+          <button class="register_user" type="button">
             Регистриция
           </button>
         </li>
       </ul>
     </div>
     <div>
-      <ul>
+      <ul class="navigation_header">
         <li>
           <a href="index.html">Главная</a>
         </li>
@@ -80,62 +76,65 @@
 
   </header>
 
-  <main>
-    <section>
+  <main class="main">
+    <section class="catalog">
       <div>
-        <ul>
+        <ul class="catalog_menu">
           <li>
             <p>Материалы</p>
-            <a href="#">НА ЛЮБОЙ ВКУС</a>
+            <a class="button_menu" href="#">НА ЛЮБОЙ ВКУС</a>
           </li>
           <li>
             <p>Инструмент</p>
-            <a href="#">НА ВСЕ СЛУЧАИ ЖИЗНИ</a>
+            <a class="button_menu" href="#">НА ВСЕ СЛУЧАИ ЖИЗНИ</a>
           </li>
           <li>
             <p>ТЕХНИКА<p>
-                <a href="#">ДЛЯ СТРОЙКИ</a>
+                <a class="button_menu" href="#">ДЛЯ СТРОЙКИ</a>
           </li>
           <li>
             <p>ДРЕЛИ</p>
             <p>Соседям на радость</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <a class="button_menu" href="catalog.html">Открыть каталог</a>
           </li>
 
           <li>
             <p>Скидки 50%<p>
-                <a href="#">НА 350 ТОВАРОВ</a>
+                <a class="button_menu" href="#">НА 350 ТОВАРОВ</a>
           </li>
           <li>
             <p>Доставка<p>
-                <a href="#">Бесплатно</a>
+                <a  class="button_menu" href="#">Бесплатно</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section>
+    <section class="popular_items">
       <div>
+      <div >
         <h2>ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-        <a href="#">Все популярные товары</a>
-        <ul>
+        <a class="button" href="#">Все популярные товары</a>
+      </div>
+
+        <ul class="catalog_items">
           <li>
             <img src="img/jpg/Perforator1.jpg" alt="BOSCH BFG 9000">
             <h3>Перфоратор BOSCHBFG 9000</h3>
-            <del>32500 Р.</del>
+            <del class="discount">32500 Р.</del>
             <a href="#">25500 Р.</a>
 
           </li>
           <li>
             <img src="img/jpg/Perforator1.jpg" alt="BOSCH BFG 3000">
             <h3>Перфоратор BOSCHBFG 3000</h3>
-            <del>22500 Р.</del>
+            <del class="discount">22500 Р.</del>
             <a href="#">15500 Р.</a>
           </li>
           <li>
             <img src="img/jpg/Perforator1.jpg" alt="BOSCH BFG 6000">
             <h3>Перфоратор BOSCHBFG 6000</h3>
-            <del>30500Р.</del>
+            <del class="discount">30500Р.</del>
             <a href="#">22500 Р.</a>
           </li>
           <li>
@@ -238,42 +237,6 @@
       </div>
     </section>
   </main>
-<section class="modal-map">
-  <h2 class="visually-hidden">Заблудились?Напишите нам!</h2>
-  <p>
-    <img src="img/map.png" width="600" height="350" alt="Офис компании находится по адресу ул. Большая конюшенная д.9">
-    <button class="button-close">
-      закрыть
-    </button>
-  </p>
-</section>
-<section class="modal-feedback">
-  <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
-    <p class="feedback-item">
-      <label for="feedback-name">Ваше имя:</label>
-      <input type="text" id="feedback-name" name="name" value="Имя Фамилия">
-    </p>
-    <p class="feedback-item">
-      <label for="feedback-email">Ваш e-mail:</label>
-      <input type="text" name="email" id="feedback-email" value="email@example.com">
-    </p>
-    <p class="feedback-item">
-      <label for="feedback-text">Текст письма</label>
-      <textarea name="blank" id="feedback-text"  rows="10" cols="50">В свободной форме</textarea>
-    </p>
-    <p>
-    <button class="send">
-      Отправить
-    </button>
-  </p>
-    <p>
-    <button class="button-close">
-      закрыть
-    </button>
-  </p>
-</form>
-</section>
-<!--
   <div>
     <section>
       <h2>Компания &laquo;Техномарт&raquo;</h2>
@@ -298,7 +261,6 @@
       </a>
     </section>
   </div>
--->
   <footer>
     <div>
       <a href="index.html">
@@ -371,13 +333,48 @@
     <div>
       <ul>
         <li>Обратная связь:
-          <a href="#mail-link">mail@htmlacademy.ru</a>
+          <a href="mail-link">mail@htmlacademy.ru</a>
         </li>
         <li>Разработано -
-          <a href="#developer">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </li>
       </ul>
     </div>
   </footer>
+  <section class="modal-map">
+    <h2 class="visually-hidden">Заблудились?Напишите нам!</h2>
+    <p>
+      <img src="img/map.png" width="600" height="350" alt="Офис компании находится по адресу ул. Большая конюшенная д.9">
+      <button class="button-close">
+        закрыть
+      </button>
+    </p>
+  </section>
+  <section class="modal-feedback">
+    <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-item">
+        <label for="feedback-name">Ваше имя:</label>
+        <input type="text" id="feedback-name" name="name" value="Имя Фамилия">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-email">Ваш e-mail:</label>
+        <input type="text" name="email" id="feedback-email" value="email@example.com">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-text">Текст письма</label>
+        <textarea name="blank" id="feedback-text"  rows="10" cols="50">В свободной форме</textarea>
+      </p>
+      <p>
+      <button class="send">
+        Отправить
+      </button>
+    </p>
+      <p>
+      <button class="button-close">
+        закрыть
+      </button>
+    </p>
+  </form>
+  </section>
 </body>
 </html>
