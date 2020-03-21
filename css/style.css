@@ -348,7 +348,7 @@ input[type="radio"].visually-hidden {
 
 .header-user-name-wrapper {
   background-color: #ffffff;
-  color: #000000;
+
   font-size: 21px;
   line-height: 21px;
 
@@ -361,10 +361,14 @@ input[type="radio"].visually-hidden {
 
   display: flex;
 }
+.header-user-name-wrapper a{
+  color:black;
+}
 
 .header-user-name {
   position: relative;
   padding-left: 34px;
+
 }
 
 .header-user-name svg {
